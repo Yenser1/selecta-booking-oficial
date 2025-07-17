@@ -11,7 +11,7 @@ function LandingPage(){
         <section className={`w-full h-screen flex justify-center items-center`}
         >
             <h1 className={`${monoton.className} text-9xl`}
-            >This is SELECTA BOOKING</h1>
+            >This is Selecta Booking</h1>
         </section>
         
     )

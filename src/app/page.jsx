@@ -1,10 +1,10 @@
-import { Monoton } from "next/font/google"
+import { Monoton } from "next/font/google";
 import Link from "next/link"
 
 const monoton = Monoton({
     subset: ['latin'],
-    weight: '400'
-    
+    weight: '400',
+    preload: true,
 })
 
 function LandingPage(){

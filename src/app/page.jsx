@@ -1,4 +1,5 @@
 import { Monoton } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
 const monoton = Monoton({
@@ -9,7 +10,6 @@ const monoton = Monoton({
 function LandingPage() {
     return (
         <section className={`w-full h-screen flex justify-center items-center flex-col`}>
-            <h1 className={`${monoton.className} text-9xl`}>This is Selecta Booking</h1>
             <div className={`flex gap-7`}>
                 <Link href={"./"}>Inicio</Link>
                 <Link href={"./Restaurantes"}>Restaurantes</Link>

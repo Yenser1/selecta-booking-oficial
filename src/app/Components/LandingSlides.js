@@ -2,6 +2,7 @@
 import { Imperial_Script } from "next/font/google";
 
 const imperial = Imperial_Script({
+    preload: false,
     weight: "400",
 });
 

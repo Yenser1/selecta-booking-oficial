@@ -1,18 +1,20 @@
-"ues client";
-import { ScrollTrigger } from "gsap/all";
+"use client";
+import { ScrollTrigger, gsap } from "gsap/all";
 import Navbar from "./Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Header() {
     return (
-        <header className="flex flex-col justify-center items-center">
-            <Link href={"/"}>
-                <Image src={"/Selecta.webp"} width={400} height={200} alt="Selecta Booking Logo" />
+        <header className="header w-full sticky inset-0 flex flex-col justify-center items-center pb-3 mb-5" style={{ borderBottom: "1px solid white" }}>
+            <Link href={"/"} className="Imagen">
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
+                    <Image src={"/Selecta.webp"} width={300} height={200} alt="Selecta Booking Logo" className="hover:scale-110 hover:rotate-2 transition-all duration-300" />
+                </motion.div>
             </Link>
             <Navbar />
         </header>
     );
 }
-
 export default Header;

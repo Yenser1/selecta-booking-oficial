@@ -24,7 +24,7 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 duration-300`}
+                    className={pathname === "/" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                 >
                     Inicio
                 </motion.h1>
@@ -37,7 +37,7 @@ function Navbar() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 duration-300`}
+                    className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                 >
                     Restaurantes
                 </motion.h1>
@@ -50,7 +50,7 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Reservas" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 duration-300`}
+                    className={pathname === "/Reservas" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                 >
                     Reservas
                 </motion.h1>
@@ -63,7 +63,7 @@ function Navbar() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 duration-300`}
+                    className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                 >
                     Acerca de Nosotros
                 </motion.h1>
@@ -76,7 +76,7 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 duration-300`}
+                    className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                 >
                     Contacto
                 </motion.h1>

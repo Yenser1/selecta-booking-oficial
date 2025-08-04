@@ -5,6 +5,7 @@ import { Tangerine } from "next/font/google";
 import Link from "next/link";
 
 const tangerine = Tangerine({
+    subsets: ["latin"],
     weight: "700",
 });
 const ESTILOS = [

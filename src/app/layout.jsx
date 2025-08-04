@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
     title: "Selecta Boooking",
-    description: "This is Selecta Booking, Select and Book, now and eat",
+    description: "La pagina de Selecta Booking ya esta aqui!, elije y reserva TOTALMENTE GRATIS!!",
 };
 
 export default function RootLayout({ children }) {

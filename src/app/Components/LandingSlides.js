@@ -22,7 +22,7 @@ function Restaurante({ restaurante, imgUrl, ariaLabel }) {
             <h1
                 className={`${imperial.className} text-shadow-2xs`}
                 style={{
-                    textShadow: "0 0 10px black",
+                    textShadow: "0 0 5px black",
                     fontSize: "clamp(2.5rem, calc(1rem + 4vw), 8rem)",
                 }}
             >

@@ -41,6 +41,3 @@ body {
     z-index: -1;
     opacity: 0.5;
 }
-.min-w-52:hover {
-    box-shadow: 0 0 20px color-mix(in srgb, white 50%, transparent 50%);
-}

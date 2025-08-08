@@ -16,7 +16,7 @@ function Navbar() {
         <nav
             className={`${roboto.className} flex gap-7 justify-center items-center`}
             style={{
-                fontSize: "clamp(1rem, 1.5vw, 3rem)",
+                fontSize: "clamp(1rem, 1.15vw, 3rem)",
             }}
         >
             <Link href={"/"}>

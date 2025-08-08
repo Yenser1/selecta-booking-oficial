@@ -24,7 +24,7 @@ function LandingPage() {
             </section>
 
             <section className="w-full flex flex-col justify-center items-center py-10 bg-amber-400">
-                <h1 className="heading">Reservas Totalmente gratis</h1>
+                <h1 className="heading">Reserva Totalmente gratis</h1>
                 <Link
                     href={"/Reservas"}
                     className="p-2 px-2.5 bg-black text-center border-2 rounded-sm border-none cursor-pointer mt-4 text-amber-300 hover:scale-105 hover:-skew-2 transition-all duration-150"

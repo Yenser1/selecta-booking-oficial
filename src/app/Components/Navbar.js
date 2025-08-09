@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Roboto_Mono } from "next/font/google";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import SVGs from "../CONST/svgs";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -24,9 +25,13 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                    className={
+                        pathname === "/"
+                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
+                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
+                    }
                 >
-                    Inicio
+                    <span className="scale-50 text-center">{SVGs[0]}</span>Inicio
                 </motion.h1>
             </Link>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
@@ -37,9 +42,13 @@ function Navbar() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                    className={
+                        pathname === "/Restaurantes"
+                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
+                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
+                    }
                 >
-                    Restaurantes
+                    <span className="scale-50 text-center">{SVGs[1]}</span>Restaurantes
                 </motion.h1>
             </Link>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
@@ -50,9 +59,13 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Reservas" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                    className={
+                        pathname === "/Reservas"
+                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
+                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
+                    }
                 >
-                    Reservas
+                    <span className="scale-50 text-center">{SVGs[2]}</span>Reservas
                 </motion.h1>
             </Link>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
@@ -63,9 +76,13 @@ function Navbar() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                    className={
+                        pathname === "/AcercaDeNosotros"
+                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
+                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
+                    }
                 >
-                    Acerca de Nosotros
+                    <span className="scale-50 text-center">{SVGs[3]}</span>Acerca de Nosotros
                 </motion.h1>
             </Link>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
@@ -76,9 +93,13 @@ function Navbar() {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
-                    className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                    className={
+                        pathname === "/Contacto"
+                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
+                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
+                    }
                 >
-                    Contacto
+                    <span className="scale-50 text-center">{SVGs[4]}</span>Contacto
                 </motion.h1>
             </Link>
         </nav>

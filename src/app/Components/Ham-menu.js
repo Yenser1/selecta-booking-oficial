@@ -148,7 +148,7 @@ const HamMenu = () => {
                                         : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
                                 }
                             >
-                                {SVGs[3]} -Contacto
+                                {SVGs[4]} -Contacto
                             </motion.h1>
                         </Link>
                     </div>

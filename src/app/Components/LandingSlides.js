@@ -20,7 +20,7 @@ function Restaurante({ restaurante, imgUrl, ariaLabel }) {
             loading="lazy"
         >
             <h1
-                className={`${imperial.className} text-shadow-2xs`}
+                className={`${imperial.className} text-shadow-2xs text-center`}
                 style={{
                     textShadow: "0 0 5px black",
                     fontSize: "clamp(2.5rem, calc(1rem + 4vw), 8rem)",

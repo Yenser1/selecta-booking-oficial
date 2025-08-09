@@ -27,7 +27,7 @@ function LandingPage() {
             </section>
 
             <section className="w-full flex flex-col justify-center items-center py-10 bg-amber-400 ">
-                <h1 className={`${robotoBold.className} heading`}>Reserva Totalmente gratis</h1>
+                <h1 className={`${robotoBold.className} heading text-center`}>Reserva Totalmente gratis</h1>
                 <Link
                     href={"/Reservas"}
                     className="p-2 px-2.5 bg-black text-center border-2 rounded-sm border-none cursor-pointer mt-4 text-amber-300 hover:scale-105 hover:-skew-2 transition-all duration-150"
@@ -36,7 +36,7 @@ function LandingPage() {
                 </Link>
             </section>
 
-            <h1 className={`${roboto.className} heading my-10`}>-Donde comere hoy?</h1>
+            <h1 className={`${robotoBold.className} heading my-10 text-center`}>-Donde comere hoy?</h1>
             <section className="flex flex-wrap w-90% mb-10 justify-center">
                 <Box
                     nombre={"Restaurante 1"}
@@ -95,14 +95,14 @@ function LandingPage() {
                 />
             </section>
             <section className="w-full bg-amber-400 flex flex-col items-center py-10 mb-96">
-                <h1 className={`${robotoBold.className} heading mb-3`}>Acerca de Nosotros</h1>
+                <h1 className={`${robotoBold.className} heading mb-3 text-center`}>Acerca de Nosotros</h1>
                 <p className="w-3/5 text-center">
                     Estoy hablando acerca de selecta booking porque en vrd es de las mejores paginas que han existido visualmente y vamos a meter y bregar mano feamente para poder resolver la
                     situacino de la situacion entonces el turno yo se lo di a el si asi es lo qe hay punto y final.
                 </p>
                 <Link
                     href={"/AcercaDeNosotros"}
-                    className="p-2 px-2.5 bg-black text-center border-2 rounded-sm border-none cursor-pointer mt-4 text-amber-300 hover:scale-105 hover:-skew-2 transition-all duration-150"
+                    className="p-2 px-2.5 bg-black border-2 rounded-sm border-none cursor-pointer mt-4 text-amber-300 hover:scale-105 hover:-skew-2 transition-all duration-150 text-center"
                 >
                     Acerca de Nosotros
                 </Link>

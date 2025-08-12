@@ -3,6 +3,7 @@ import EmblaCarousel from "./Components/EmblaCarousel";
 import Restaurante from "./Components/LandingSlides";
 import Box from "./Components/ResBox";
 import Link from "next/link";
+import RESTAURANT from "./CONST/restuarants";
 import "./styles/embla.css";
 
 const roboto = Roboto_Mono({
@@ -16,7 +17,7 @@ const robotoBold = Roboto_Mono({
 const OPTIONS = { dragFree: true, loop: true };
 const SLIDES = [];
 for (let i = 1; i <= 7; i++) {
-    SLIDES.push(<Restaurante restaurante={`Ejemplo ${i} Restaurante`} imgUrl={`/Restaurantes/${i}.webp`} ariaLabel={""} loading={""} />);
+    SLIDES.push(<Restaurante restaurante={RESTAURANT[i - 1].name} imgUrl={RESTAURANT[i - 1].imgURL} ariaLabel={""} loading={""} />);
 }
 
 function LandingPage() {
@@ -38,61 +39,13 @@ function LandingPage() {
 
             <h1 className={`${robotoBold.className} heading my-10 text-center`}>-Donde comere hoy?</h1>
             <section className="flex flex-wrap w-90% mb-10 justify-center">
-                <Box
-                    nombre={"Restaurante 1"}
-                    estilo={0}
-                    imgURL={"/Restaurantes/1.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    link={"/Restaurante1"}
-                />
-                <Box
-                    nombre={"Restaurante 2"}
-                    estilo={1}
-                    imgURL={"/Restaurantes/2.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.05"}
-                    link={"/Restaurante2"}
-                />
-                <Box
-                    nombre={"Restaurante 3"}
-                    estilo={2}
-                    imgURL={"/Restaurantes/3.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.1"}
-                    link={"/Restaurante3"}
-                />
-                <Box
-                    nombre={"Restaurante 4"}
-                    estilo={3}
-                    imgURL={"/Restaurantes/4.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.15"}
-                    link={"/Restaurante4"}
-                />
-                <Box
-                    nombre={"Restaurante 5"}
-                    estilo={4}
-                    imgURL={"/Restaurantes/5.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.05"}
-                    link={"/Restaurante4"}
-                />
-                <Box
-                    nombre={"Restaurante 6"}
-                    estilo={3}
-                    imgURL={"/Restaurantes/6.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.1"}
-                    link={"/Restaurante4"}
-                />
-                <Box
-                    nombre={"Restaurante 7"}
-                    estilo={3}
-                    imgURL={"/Restaurantes/7.webp"}
-                    descripcion={"Esta es una pequena descripcion del restaurante porque realmente para leer mas clickea aqui abajo"}
-                    delay={"0.15"}
-                    link={"/Restaurante4"}
-                />
+                <Box nombre={RESTAURANT[0].name} estilo={RESTAURANT[0].estilo} imgURL={RESTAURANT[0].imgURL} descripcion={RESTAURANT[0].descripcion} link={RESTAURANT[0].link} />
+                <Box nombre={RESTAURANT[1].name} estilo={RESTAURANT[1].estilo} imgURL={RESTAURANT[1].imgURL} descripcion={RESTAURANT[1].descripcion} delay={"0.05"} link={RESTAURANT[1].link} />
+                <Box nombre={RESTAURANT[2].name} estilo={RESTAURANT[2].estilo} imgURL={RESTAURANT[2].imgURL} descripcion={RESTAURANT[2].descripcion} delay={"0.1"} link={RESTAURANT[2].link} />
+                <Box nombre={RESTAURANT[3].name} estilo={RESTAURANT[3].estilo} imgURL={RESTAURANT[3].imgURL} descripcion={RESTAURANT[3].descripcion} delay={"0.15"} link={RESTAURANT[3].link} />
+                <Box nombre={RESTAURANT[4].name} estilo={RESTAURANT[4].estilo} imgURL={RESTAURANT[4].imgURL} descripcion={RESTAURANT[4].descripcion} delay={"0.05"} link={RESTAURANT[4].link} />
+                <Box nombre={RESTAURANT[5].name} estilo={RESTAURANT[5].estilo} imgURL={RESTAURANT[5].imgURL} descripcion={RESTAURANT[5].descripcion} delay={"0.1"} link={RESTAURANT[5].link} />
+                <Box nombre={RESTAURANT[6].name} estilo={RESTAURANT[6].estilo} imgURL={RESTAURANT[6].imgURL} descripcion={RESTAURANT[6].descripcion} delay={"0.15"} link={RESTAURANT[6].link} />
             </section>
             <section className="w-full bg-amber-400 flex flex-col items-center py-10 mb-96">
                 <h1 className={`${robotoBold.className} heading mb-3 text-center`}>Acerca de Nosotros</h1>

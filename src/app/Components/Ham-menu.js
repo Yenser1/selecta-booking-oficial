@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import SVGs from "../CONST/svgs";
 
 const HamMenu = () => {
     const pathname = usePathname();
@@ -70,16 +69,11 @@ const HamMenu = () => {
                                 initial={{ y: -50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={
-                                    pathname === "/"
-                                        ? `text-amber-400 duration-300 w-1/2 border-b-1 flex self-center justify-self-center text-center`
-                                        : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
-                                }
+                                className={pathname === "/" ? `text-amber-400 duration-300 w-1/2 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300`}
                             >
-                                {SVGs[0]} -Inicio
+                                Inicio
                             </motion.h1>
                         </Link>
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}></motion.p>
                         <Link href={"/Restaurantes"}>
                             <motion.h1
                                 onClick={() => {
@@ -88,16 +82,11 @@ const HamMenu = () => {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={
-                                    pathname === "/Restaurantes"
-                                        ? `text-amber-400 duration-300 border-b-1 flex self-center justify-self-center`
-                                        : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
-                                }
+                                className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                             >
-                                {SVGs[1]}- Restaurantes
+                                Restaurantes
                             </motion.h1>
                         </Link>
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}></motion.p>
                         <Link href={"/Reservas"}>
                             <motion.h1
                                 onClick={() => {
@@ -106,16 +95,11 @@ const HamMenu = () => {
                                 initial={{ y: -50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={
-                                    pathname === "/Reservas"
-                                        ? `text-amber-400 duration-300 border-b-1 flex self-center justify-self-center`
-                                        : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
-                                }
+                                className={pathname === "/Reservas" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                             >
-                                {SVGs[2]} -Reservas
+                                Reservas
                             </motion.h1>
                         </Link>
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}></motion.p>
                         <Link href={"/AcercaDeNosotros"}>
                             <motion.h1
                                 onClick={() => {
@@ -124,16 +108,11 @@ const HamMenu = () => {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={
-                                    pathname === "/AcercaDeNosotros"
-                                        ? `text-amber-400 duration-300 border-b-1 flex self-center justify-self-center`
-                                        : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
-                                }
+                                className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                             >
-                                {SVGs[3]} -Acerca de Nosotros
+                                Acerca de Nosotros
                             </motion.h1>
                         </Link>
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}></motion.p>
                         <Link href={"/Contacto"}>
                             <motion.h1
                                 onClick={() => {
@@ -142,13 +121,9 @@ const HamMenu = () => {
                                 initial={{ y: -50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={
-                                    pathname === "/Contacto"
-                                        ? `text-amber-400 duration-300 border-b-1 flex self-center justify-self-center`
-                                        : ` hover:text-amber-200 hover:scale-105 duration-300 flex self-center justify-self-center`
-                                }
+                                className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                             >
-                                {SVGs[4]} -Contacto
+                                Contacto
                             </motion.h1>
                         </Link>
                     </div>

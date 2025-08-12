@@ -3,30 +3,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tangerine } from "next/font/google";
 import Link from "next/link";
+import ESTILOS from "../CONST/estilos";
 
 const tangerine = Tangerine({
     subsets: ["latin"],
     weight: "700",
 });
-const ESTILOS = [
-    <div key={0} className="bg-cyan-600 w-max p-1 px-1.5 rounded-md font-bold">
-        <p>Marina</p>
-    </div>,
-    <div key={1} className="bg-amber-300 w-max p-1 px-1.5 rounded-md font-bold">
-        <p>Mediterranea</p>
-    </div>,
-    <div key={2} className="bg-amber-400 w-max p-1 px-1.5 rounded-md font-bold">
-        <p>Espanola</p>
-    </div>,
-    <div key={3} className="bg-green-700 w-max p-1 px-1.5 rounded-md font-bold">
-        <p>Dominicana</p>
-    </div>,
-    <div key={4} className="bg-blue-500 w-max p-1 px-1.5 rounded-md font-bold">
-        <p>Americana</p>
-    </div>,
-];
 
-function Box({ nombre, estilo, imgURL, descripcion, delay = 0, link }) {
+function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", descripcion = "Descripcion generica", delay = 0, link = "/RestauranteGenerico" }) {
     return (
         <motion.div
             initial={{ y: 70 }}

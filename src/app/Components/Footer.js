@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer>
+        <footer className="bg-black">
             <h1 className="">&copy; Todos los derechos reservados</h1>
         </footer>
     );

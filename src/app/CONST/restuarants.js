@@ -5,6 +5,7 @@ const RESTAURANT = [
         name: "Restaurante 1",
         id: 1,
         descripcion: "Este es el restaurante numero 1 que fue utilizado como sujeto de prueba para exportar un array de objetos que contenga toda la informacion de ",
+        largDesc: "",
         estilo: 0,
         imgURL: "/Restaurantes/1.webp",
         link: "/Restaurante1",

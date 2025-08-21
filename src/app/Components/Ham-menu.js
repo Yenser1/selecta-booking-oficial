@@ -36,7 +36,6 @@ const HamMenu = () => {
             {showMenu && (
                 <motion.section
                     initial={{ x: "100%" }}
-                    whileInView={{ x: 0 }}
                     transition={{ ease: "easeIn", duration: 0.6 }}
                     className="flex flex-col absolute w-full items-center justify-center h-screen top-0 left-0 p-0 m-0 bg-black"
                 >
@@ -66,10 +65,10 @@ const HamMenu = () => {
                                 onClick={() => {
                                     setShowMenu(false);
                                 }}
-                                initial={{ y: -50, opacity: 0 }}
+                                initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={pathname === "/" ? `text-amber-400 duration-300 w-1/2 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300`}
+                                className={pathname === "/" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                             >
                                 Inicio
                             </motion.h1>

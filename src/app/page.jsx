@@ -16,7 +16,7 @@ const robotoBold = Roboto_Mono({
 });
 const OPTIONS = { dragFree: true, loop: true };
 const SLIDES = [];
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= RESTAURANT.length; i++) {
     SLIDES.push(<Restaurante restaurante={RESTAURANT[i - 1].name} imgUrl={RESTAURANT[i - 1].imgURL} ariaLabel={""} loading={""} />);
 }
 
@@ -47,7 +47,7 @@ function LandingPage() {
                 <Box nombre={RESTAURANT[5].name} estilo={RESTAURANT[5].estilo} imgURL={RESTAURANT[5].imgURL} descripcion={RESTAURANT[5].descripcion} delay={"0.1"} link={RESTAURANT[5].link} />
                 <Box nombre={RESTAURANT[6].name} estilo={RESTAURANT[6].estilo} imgURL={RESTAURANT[6].imgURL} descripcion={RESTAURANT[6].descripcion} delay={"0.15"} link={RESTAURANT[6].link} />
             </section>
-            <section className="w-full bg-amber-400 flex flex-col items-center py-10 mb-96">
+            <section className="w-full bg-amber-400 flex flex-col items-center py-10">
                 <h1 className={`${robotoBold.className} heading mb-3 text-center`}>Acerca de Nosotros</h1>
                 <p className="w-3/5 text-center">
                     Estoy hablando acerca de selecta booking porque en vrd es de las mejores paginas que han existido visualmente y vamos a meter y bregar mano feamente para poder resolver la

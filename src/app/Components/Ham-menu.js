@@ -36,6 +36,7 @@ const HamMenu = () => {
             {showMenu && (
                 <motion.section
                     initial={{ x: "100%" }}
+                    whileInView={{ x: 0 }}
                     transition={{ ease: "easeIn", duration: 0.6 }}
                     className="flex flex-col absolute w-full items-center justify-center h-screen top-0 left-0 p-0 m-0 bg-black"
                 >

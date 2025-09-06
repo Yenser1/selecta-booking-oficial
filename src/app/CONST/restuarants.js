@@ -1,5 +1,3 @@
-import ESTILOS from "./estilos";
-
 const RESTAURANT = [
     {
         name: "Restaurante 1",
@@ -10,6 +8,7 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/1.webp",
         link: "/Restaurante1",
         handleLink: "Restaurante1",
+        descripcionLarga: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`,
     },
     {
         name: "Restaurante 2",
@@ -19,6 +18,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/2.webp",
         link: "/Restaurante2",
         handleLink: "Restaurante2",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.",
     },
     {
         name: "Restaurante 3",
@@ -28,6 +29,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/3.webp",
         link: "/Restaurante3",
         handleLink: "Restaurante3",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.",
     },
     {
         name: "Restaurante 4",
@@ -37,6 +40,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/4.webp",
         link: "/Restaurante4",
         handleLink: "Restaurante4",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.",
     },
     {
         name: "Restaurante 5",
@@ -46,6 +51,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/5.webp",
         link: "/Restaurante5",
         handleLink: "Restaurante5",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`",
     },
     {
         name: "Restaurante 6",
@@ -55,6 +62,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/6.webp",
         link: "/Restaurante6",
         handleLink: "Restaurante6",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`",
     },
     {
         name: "Restaurante 7",
@@ -64,6 +73,8 @@ const RESTAURANT = [
         imgURL: "/Restaurantes/7.webp",
         link: "/Restaurante7",
         handleLink: "Restaurante7",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`",
     },
 ];
 export default RESTAURANT;

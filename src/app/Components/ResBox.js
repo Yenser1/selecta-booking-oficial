@@ -13,7 +13,7 @@ const tangerine = Tangerine({
 function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", descripcion = "Descripcion generica", delay = 0, link = "/RestauranteGenerico" }) {
     return (
         <motion.div
-            initial={{ y: 70 }}
+            initial={{ y: 30 }}
             whileInView={{ y: 0 }}
             transition={{ ease: "easeIn", duration: "0.5", delay: `${delay}` }}
             className="min-w-52 max-w-96 relative flex flex-col rounded-3xl mx-2.5 my-2.5 hover:-translate-y-3 transition-all duration-200"

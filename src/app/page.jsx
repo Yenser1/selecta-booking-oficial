@@ -4,6 +4,7 @@ import Restaurante from "./Components/LandingSlides";
 import Box from "./Components/ResBox";
 import Link from "next/link";
 import RESTAURANT from "./CONST/restuarants";
+import ContactUsGrid from "./Components/ContactanosGrid";
 import "./styles/embla.css";
 
 const roboto = Roboto_Mono({
@@ -47,7 +48,7 @@ function LandingPage() {
                 <Box nombre={RESTAURANT[5].name} estilo={RESTAURANT[5].estilo} imgURL={RESTAURANT[5].imgURL} descripcion={RESTAURANT[5].descripcion} delay={"0.1"} link={RESTAURANT[5].link} />
                 <Box nombre={RESTAURANT[6].name} estilo={RESTAURANT[6].estilo} imgURL={RESTAURANT[6].imgURL} descripcion={RESTAURANT[6].descripcion} delay={"0.15"} link={RESTAURANT[6].link} />
             </section>
-            <section className="w-full bg-amber-400 flex flex-col items-center py-10">
+            <section className="w-full bg-amber-400 flex flex-col items-center py-10 mb-10">
                 <h1 className={`${robotoBold.className} heading mb-3 text-center`}>Acerca de Nosotros</h1>
                 <p className="w-3/5 text-center">
                     Estoy hablando acerca de selecta booking porque en vrd es de las mejores paginas que han existido visualmente y vamos a meter y bregar mano feamente para poder resolver la
@@ -60,6 +61,7 @@ function LandingPage() {
                     Acerca de Nosotros
                 </Link>
             </section>
+            <ContactUsGrid />
         </main>
     );
 }

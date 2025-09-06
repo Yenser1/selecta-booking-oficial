@@ -54,23 +54,6 @@ function Navbar() {
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
                 |
             </motion.p>
-            <Link href={"/Reservas"}>
-                <motion.h1
-                    initial={{ y: -50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ ease: "easeInOut" }}
-                    className={
-                        pathname === "/Reservas"
-                            ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
-                            : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
-                    }
-                >
-                    <span className="scale-50 text-center">{SVGs[2]}</span>Reservas
-                </motion.h1>
-            </Link>
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
-                |
-            </motion.p>
             <Link href={"/AcercaDeNosotros"}>
                 <motion.h1
                     initial={{ y: 50, opacity: 0 }}

@@ -76,5 +76,16 @@ const RESTAURANT = [
         descripcionLarga:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`",
     },
+    {
+        name: "Restaurante 8",
+        id: 8,
+        descripcion: "descripcion de la 2 la 2 tiene una descripcion muy descriptiva para descripcionar la descripcion que debe ser descrita porque sinceramente aaa",
+        estilo: 2,
+        imgURL: "/Restaurantes/8.webp",
+        link: "/Restaurante8",
+        handleLink: "Restaurante",
+        descripcionLarga:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt vel alias iure sed excepturi, placeat molestiae libero veritatis id. Modi fugit corporis aperiam! Rem aliquid a hic iure atque.`",
+    },
 ];
 export default RESTAURANT;

@@ -28,7 +28,7 @@ function LandingPage() {
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} />
             </section>
 
-            <section className="w-full flex flex-col justify-center items-center py-10 bg-amber-400 ">
+            <section className="w-full flex flex-col justify-center items-center py-10 bg-amber-500 ">
                 <h1 className={`${robotoBold.className} heading text-center`}>Reserva Totalmente gratis</h1>
                 <Link
                     href={"/Reservas"}
@@ -44,13 +44,22 @@ function LandingPage() {
                 <Box nombre={RESTAURANT[1].name} estilo={RESTAURANT[1].estilo} imgURL={RESTAURANT[1].imgURL} descripcion={RESTAURANT[1].descripcion} delay={"0.05"} link={RESTAURANT[1].link} />
                 <Box nombre={RESTAURANT[2].name} estilo={RESTAURANT[2].estilo} imgURL={RESTAURANT[2].imgURL} descripcion={RESTAURANT[2].descripcion} delay={"0.1"} link={RESTAURANT[2].link} />
                 <Box nombre={RESTAURANT[3].name} estilo={RESTAURANT[3].estilo} imgURL={RESTAURANT[3].imgURL} descripcion={RESTAURANT[3].descripcion} delay={"0.15"} link={RESTAURANT[3].link} />
-                <Box nombre={RESTAURANT[4].name} estilo={RESTAURANT[4].estilo} imgURL={RESTAURANT[4].imgURL} descripcion={RESTAURANT[4].descripcion} delay={"0.05"} link={RESTAURANT[4].link} />
-                <Box nombre={RESTAURANT[5].name} estilo={RESTAURANT[5].estilo} imgURL={RESTAURANT[5].imgURL} descripcion={RESTAURANT[5].descripcion} delay={"0.1"} link={RESTAURANT[5].link} />
-                <Box nombre={RESTAURANT[6].name} estilo={RESTAURANT[6].estilo} imgURL={RESTAURANT[6].imgURL} descripcion={RESTAURANT[6].descripcion} delay={"0.15"} link={RESTAURANT[6].link} />
             </section>
-            <section className="w-full bg-amber-400 flex flex-col items-center py-10 mb-10">
-                <h1 className={`${robotoBold.className} heading mb-3 text-center`}>Acerca de Nosotros</h1>
-                <p className="w-3/5 text-center">
+            <section className="w-full bg-amber-500 flex flex-col items-center py-10 mb-10">
+                <h1
+                    className={`${robotoBold.className} heading mb-3 text-center`}
+                    style={{
+                        textShadow: "0 0 15px black",
+                    }}
+                >
+                    Acerca de Nosotros
+                </h1>
+                <p
+                    className="w-3/5 text-center"
+                    style={{
+                        textShadow: "0 0 15px black",
+                    }}
+                >
                     Estoy hablando acerca de selecta booking porque en vrd es de las mejores paginas que han existido visualmente y vamos a meter y bregar mano feamente para poder resolver la
                     situacino de la situacion entonces el turno yo se lo di a el si asi es lo qe hay punto y final.
                 </p>

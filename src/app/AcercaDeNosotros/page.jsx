@@ -1,24 +1,41 @@
+import Image from "next/image";
+
 function AcercaDeNosotros() {
     return (
-        <section className="w-full flex flex-col items-center">
+        <section>
+            <h1 className="heading text-center">Acerca de Nosotros</h1>
             <div
-                className=" bg-amber-400 px-4 flex justify-center rounded-t-2xl"
+                className="w-full flex items-center justify-center flex-wrap"
                 style={{
-                    width: "clamp(350px, 50vw, 1000px)",
+                    gap: "clamp(10px, 5vw + 1rem, 10rem)",
                 }}
             >
-                <h1 className="heading">Acerca de Nosotros</h1>
+                <div className="w-96 h-96 bg-amber-200 rounded-4xl">Imagen</div>
+                <div className="w-96 h-96 bg-blue-200">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis blanditiis labore molestiae adipisci dolores quos, impedit nostrum, odio deserunt doloribus quod velit
+                        recusandae placeat ab cum eos quas error.
+                    </p>
+                </div>
             </div>
             <div
-                className="px-4 flex flex-wrap justify-center border-r-2 border-l-2 border-amber-400 p-3 gap-3"
+                className="w-full flex items-center justify-center mt-16"
                 style={{
-                    width: "clamp(350px, 50vw, 1000px)",
-                    height: "clamp(500px, 50vh, 1000px)",
+                    gap: "clamp(10px, 5vw + 1rem, 10rem)",
                 }}
             >
-                <div className="w-3/7  bg-amber-200"></div>
-                <div className="w-3/7  bg-amber-300">valora</div>
+                <div className="w-96 h-96 bg-blue-200">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis blanditiis labore molestiae adipisci dolores quos, impedit nostrum, odio deserunt doloribus quod velit
+                        recusandae placeat ab cum eos quas error.
+                    </p>
+                </div>
+                <div className="w-96 h-96 bg-amber-200 rounded-4xl">Imagen</div>
             </div>
+            <p className="mt-20 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus magnam sint ducimus voluptatum voluptates perferendis, deleniti dicta pariatur alias, harum doloremque voluptatem.
+                Eos iste, repellat est voluptatum corrupti mollitia.
+            </p>
         </section>
     );
 }

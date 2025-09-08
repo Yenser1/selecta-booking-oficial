@@ -43,7 +43,7 @@ function Navbar() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut" }}
                     className={
-                        pathname === "/Restaurantes"
+                        pathname.startsWith("/Restaurantes")
                             ? `text-amber-400 duration-300 border-b-1 flex justify-center items-center`
                             : ` hover:text-amber-200 hover:scale-105 duration-300 flex justify-center items-center`
                     }

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 function Footer() {
     const pathname = usePathname();
     return (
-        <footer className="bg-black flex flex-col py-7 items-center gap-7">
+        <footer className="bg-black flex flex-col py-7 items-center gap-7 mt-12">
             <section className="flex justify-between">
                 <div className="text-center">
                     <Link href={"/"}>
@@ -29,7 +29,7 @@ function Footer() {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ ease: "easeInOut" }}
-                            className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                            className={pathname.startsWith("/Restaurantes") ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
                         >
                             Restaurantes
                         </motion.h1>

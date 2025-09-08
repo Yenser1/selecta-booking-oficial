@@ -31,7 +31,20 @@ function ContactUsGrid() {
                     <Mail className="w-12 h-12 " />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
                         <p className="text-2xl">contacto@selectabooking.com</p>
-                        <LinkIcon className="hover:scale-110 transition-all duration-300 cursor-pointer" onClick={(elemento) => navigator.clipboard.writeText("contacto@selectabooking.com")} />
+                        <LinkIcon
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            onClick={(elemento) =>
+                                navigator.clipboard
+                                    .writeText("contacto@selectabooking.com")
+                                    .then(() => {
+                                        // Optional: Provide feedback to the user
+                                        alert("Copied the text");
+                                    })
+                                    .catch((err) => {
+                                        console.error("Failed to copy text: ", err);
+                                    })
+                            }
+                        />
                     </div>
                 </div>
                 <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">

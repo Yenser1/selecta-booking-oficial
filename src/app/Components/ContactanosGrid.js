@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, LocationEdit } from "lucide-react";
+import { Mail, Phone, LocationEdit, LinkIcon } from "lucide-react";
 
 function ContactUsGrid() {
     return (
@@ -27,15 +27,18 @@ function ContactUsGrid() {
                 </div>
             </div>
             <div className="flex flex-wrap w-full justify-center mt-12 gap-12">
-                <div className="flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
-                    <Mail className="w-12 h-12" />
-                    <p className="text-2xl">contacto@selectabooking.com</p>
+                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-200 px-10 text-center">
+                    <Mail className="w-12 h-12 " />
+                    <div className="flex items-center gap-5 flex-wrap justify-center">
+                        <p className="text-2xl">contacto@selectabooking.com</p>
+                        <LinkIcon className="hover:scale-110 transition-all duration-300 cursor-pointer" onClick={(elemento) => navigator.clipboard.writeText("contacto@selectabooking.com")} />
+                    </div>
                 </div>
-                <div className="flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
                     <LocationEdit className="w-12 h-12" />
                     <p className="text-2xl">Calle 19, #89, Culo e` Maco, La Romana, Republica Dominicana</p>
                 </div>
-                <div className="flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
                     <Phone className="w-12 h-12" />
                     <p className="text-2xl">(829) 646-0191</p>
                 </div>

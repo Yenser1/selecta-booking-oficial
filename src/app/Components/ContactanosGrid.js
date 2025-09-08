@@ -7,7 +7,7 @@ function ContactUsGrid() {
             <div className="flex">
                 <div className="flex justify-center w-full mt-6">
                     <Link
-                        href={"https://wa.link/uqhepc"}
+                        href={"https://wa.link/3b0fmf"}
                         target="blank"
                         className="bg-green-500 py-3 px-12 rounded-4xl flex justify-center items-center gap-6 text-xl hover:scale-105 duration-200 delay-75"
                         style={{

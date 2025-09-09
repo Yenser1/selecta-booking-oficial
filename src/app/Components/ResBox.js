@@ -39,7 +39,7 @@ function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", d
                                 Leer mas
                             </motion.button>
                         </Link>
-                        <Link href={`${link}`}>
+                        <Link href={`https://wa.link/3b0fmf`} target="blank">
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ ease: "linear", duration: 0.1 }}

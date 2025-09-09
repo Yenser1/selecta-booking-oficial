@@ -31,7 +31,8 @@ function LandingPage() {
             <section className="w-full flex flex-col justify-center items-center py-10 bg-amber-500 ">
                 <h1 className={`${robotoBold.className} heading text-center`}>Reserva Totalmente gratis</h1>
                 <Link
-                    href={"/Reservas"}
+                    href={"https://wa.link/3b0fmf"}
+                    target="blank"
                     className="p-2 px-2.5 bg-black text-center border-2 rounded-sm border-none cursor-pointer mt-4 text-amber-300 hover:scale-105 hover:-skew-2 transition-all duration-150"
                 >
                     Reservar Ahora

@@ -28,10 +28,10 @@ function ContactUsGrid() {
                 </div>
             </div>
             <div className="flex flex-wrap w-full justify-center mt-12 gap-12">
-                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-200 px-10 text-center">
+                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-200 px-10 text-center">
                     <Mail className="w-12 h-12 " />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
-                        <p className="text-2xl">contacto@selectabooking.com</p>
+                        <p className="h6">contacto@selectabooking.com</p>
                         <ClipboardCopy
                             className="hover:scale-110 transition-all duration-300 cursor-pointer w-8 h-8"
                             onClick={() =>
@@ -48,10 +48,10 @@ function ContactUsGrid() {
                         />
                     </div>
                 </div>
-                <div className="contenedor hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                <div className="contenedor hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
                     <LocationEdit className="w-12 h-12" />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
-                        <p className="text-2xl">Calle 19, #89, Culo e` Maco, La Romana, Republica Dominicana</p>
+                        <p className="h6">Calle 19, #89, Culo e` Maco, La Romana, Republica Dominicana</p>
                         <ClipboardCopy
                             className="hover:scale-110 transition-all duration-300 cursor-pointer w-8 h-8"
                             onClick={() =>
@@ -65,10 +65,10 @@ function ContactUsGrid() {
                         />
                     </div>
                 </div>
-                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg h-60 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
                     <Phone className="w-12 h-12" />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
-                        <p className="text-2xl">(829) 646-0191</p>
+                        <p className="h6">(829) 646-0191</p>
                         <ClipboardCopy
                             className="hover:scale-110 transition-all duration-300 cursor-pointer w-8 h-8"
                             onClick={() =>

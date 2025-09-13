@@ -15,12 +15,13 @@ function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", d
         <motion.div
             initial={{ y: 30 }}
             whileInView={{ y: 0 }}
+            viewport={{ once: true }}
             transition={{ ease: "easeIn", duration: "0.5", delay: `${delay}` }}
-            className="min-w-52 max-w-96 relative flex flex-col rounded-3xl mx-2.5 my-2.5 hover:-translate-y-3 transition-all duration-200"
+            className="min-w-52 max-w-96 relative flex flex-col rounded-3xl mx-2.5 my-2.5 hover:-translate-y-3 bg-[#333] transition-all duration-200"
         >
             <h1
-                className={`${tangerine.className} heading text-center absolute top-5 self-center align-middle w-full backdrop-brightness-75`}
-                style={{ fontSize: "4.5rem", textShadow: "0 0 7px black" }}
+                className={`${tangerine.className} heading text-center absolute top-5 self-center align-middle py-3 w-full backdrop-brightness-75 `}
+                style={{ fontSize: "4.5rem", textShadow: "0 0 7px black", lineHeight: "1" }}
             >
                 {nombre}
             </h1>

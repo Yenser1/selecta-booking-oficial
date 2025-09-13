@@ -13,7 +13,7 @@ function infoRestaurante({ params }) {
     const { name } = params;
     let pagina;
     RESTAURANT.map((REST) => {
-        REST.handleLink == name ? (pagina = [REST.name, REST.descripcion, REST.estilo, REST.imgURL, REST.handleLink, REST.descripcionLarga]) : console.log("No son iguales");
+        REST.handleLink == name ? (pagina = [REST.name, REST.descripcion, REST.estilo, REST.imgURL, REST.handleLink, REST.ultraLargeDesc]) : console.log("No son iguales");
     });
     return (
         <main className="flex flex-col">
@@ -31,17 +31,14 @@ function infoRestaurante({ params }) {
                 <div className="absolute bottom-3 left-3">{ESTILOS[pagina[2]]}</div>
             </div>
 
-            <div className="w-full flex justify-center mt-10">
-                <p className="w-1/3 text-justify text-xl">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, magni incidunt dicta magnam quam ex vero et accusantium vel cumque, quas optio est. A, nobis accusamus rem dolores
-                    quas nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis ipsum, voluptatem hic omnis impedit id inventore quibusdam sequi, culpa voluptas eos
-                    recusandae soluta optio facere iure voluptate quae libero.
-                </p>
+            <div class="w-full flex justify-center mt-10">
+                <p class="w-3/4 md:w-3/4 text-justify body-lg">{pagina[5]}</p>
             </div>
 
             <div className="flex w-full justify-center">
                 <Link
-                    href={"/"}
+                    href={"https://wa.link/3b0fmf"}
+                    target="blank"
                     className="w-fit p-2 px-2.5 bg-amber-300 border-2 rounded-sm border-none cursor-pointer mt-4 text-black hover:scale-105 hover:-skew-2 transition-all duration-150 text-center"
                 >
                     Reservar

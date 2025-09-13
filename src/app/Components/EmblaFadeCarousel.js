@@ -10,10 +10,9 @@ import "../styles/embla-for-fade.css";
 
 const EmblaCarouselFade = (props) => {
     const { slides, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade(), Autoplay({ playOnInit: true, delay: 2000 })]);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade(), Autoplay({ playOnInit: true, delay: 4000 })]);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
-
     const { autoplayIsPlaying, toggleAutoplay, onAutoplayButtonClick } = useAutoplay(emblaApi);
 
     return (

@@ -17,13 +17,6 @@ function Header() {
         window.addEventListener("resize", checksize);
         return () => window.removeEventListener("resize", checksize);
     }, []);
-
-    useEffect(() => {
-        const checksize = () => setIsMobile(window.innerWidth < BREAKPOINT);
-        checksize();
-        window.addEventListener("resize", checksize);
-        return () => window.removeEventListener("resize", checksize);
-    }, []);
     const HEADERHAM = (
         <header className="header w-full sticky inset-0 z-30 flex justify-between pb-1 px-[10vw] items-center backdrop-blur-md">
             <Link href={"/"} className="Imagen">

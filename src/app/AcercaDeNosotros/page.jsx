@@ -10,7 +10,9 @@ function AcercaDeNosotros() {
                     gap: "clamp(10px, 5vw + 1rem, 10rem)",
                 }}
             >
-                <div className="w-96 h-96 bg-amber-200 rounded-4xl"></div>
+                <div className="w-96 h-96 bg-amber-200 rounded-4xl">
+                    <Image src={"/Empleados/grupalSinProfe.jpg"} width={500} height={500} />
+                </div>
                 <div className="w-96 h-96 flex justify-center items-center">
                     <p className="text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis blanditiis labore molestiae adipisci dolores quos, impedit nostrum, odio deserunt doloribus quod velit

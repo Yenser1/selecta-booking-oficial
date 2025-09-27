@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function AcercaDeNosotros() {
     return (
-        <section>
+        <section className="body-lg">
             <h1 className="heading text-center">Acerca de Nosotros</h1>
             <div
                 className="w-full flex items-center justify-center flex-wrap mt-12"
@@ -10,8 +10,8 @@ function AcercaDeNosotros() {
                     gap: "clamp(10px, 5vw + 1rem, 10rem)",
                 }}
             >
-                <div className="w-96 h-96 bg-amber-200 rounded-4xl">
-                    <Image src={"/Empleados/grupalSinProfe.jpg"} width={500} height={500} />
+                <div className="w-96 h-96 rounded-lg relative">
+                    <Image src={"/Empleados/grupalSinProfe.jpg"} fill className="object-cover rounded-2xl" />
                 </div>
                 <div className="w-96 h-96 flex justify-center items-center">
                     <p className="text-justify">
@@ -32,7 +32,23 @@ function AcercaDeNosotros() {
                         recusandae placeat ab cum eos quas error.
                     </p>
                 </div>
-                <div className="w-96 h-96 bg-amber-200 rounded-4xl"></div>
+                <div className="w-96 h-96 rounded-lg relative">
+                    <Image src={"/Empleados/grupalConProfe.jpg"} fill className="object-cover rounded-2xl" />
+                </div>
+            </div>
+            <div className="w-full flex flex-wrap gap-4 items-center justify-center mt-20">
+                <div className="w-1/4 h-[25vw] min-w-56 min-h-56 max-w-86 max-h-86 rounded-lg relative">
+                    <Image src={"/Empleados/Hansel.jpg"} fill className="object-cover rounded-2xl object-top-right" />
+                </div>
+                <div className="w-1/4 h-[25vw] min-w-56 min-h-56 max-w-86 max-h-86 rounded-lg relative">
+                    <Image src={"/Empleados/Yordani.jpg"} fill className="object-cover rounded-2xl object-top-right" />
+                </div>
+                <div className="w-1/4 h-[25vw] min-w-56 min-h-56 max-w-86 max-h-86 rounded-lg relative">
+                    <Image src={"/Empleados/Melissa.jpg"} fill className="object-cover rounded-2xl object-top-right" />
+                </div>
+                <div className="w-1/4 h-[25vw] min-w-56 min-h-56 max-w-86 max-h-86 rounded-lg relative">
+                    <Image src={"/Empleados/Yenser.jpg"} fill className="object-cover rounded-2xl object-top-right" />
+                </div>
             </div>
             <p className="mt-20 text-center px-[10vw]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus magnam sint ducimus voluptatum voluptates perferendis, deleniti dicta pariatur alias, harum doloremque voluptatem.

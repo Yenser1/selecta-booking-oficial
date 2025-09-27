@@ -1,11 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { LinkIcon } from "lucide-react";
 import ContactUsGrid from "../Components/ContactanosGrid";
+import { createClient } from "@supabase/supabase-js";
 
-function Contacto() {
+const supabaseUrl = "https://zejtimfkhwnardvbvoyq.supabase.co";
+const supabaseKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InplanRpbWZraHduYXJkdmJ2b3lxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MzgxNTYsImV4cCI6MjA2ODIxNDE1Nn0.WnmqZnYXfaSgb7u3Px5uov_0rOB1GIjQgIOT_Aad3Co";
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+export default function Contacto() {
     return (
         <main>
             <div className="relative">
@@ -20,7 +24,7 @@ function Contacto() {
                 </h1>
             </div>
             <ContactUsGrid />
+            <div></div>
         </main>
     );
 }
-export default Contacto;

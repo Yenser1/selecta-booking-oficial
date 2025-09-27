@@ -87,19 +87,6 @@ const HamMenu = () => {
                                 Restaurantes
                             </motion.h1>
                         </Link>
-                        <Link href={"/Reservas"}>
-                            <motion.h1
-                                onClick={() => {
-                                    setShowMenu(false);
-                                }}
-                                initial={{ y: -50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeInOut" }}
-                                className={pathname === "/Reservas" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
-                            >
-                                Reservas
-                            </motion.h1>
-                        </Link>
                         <Link href={"/AcercaDeNosotros"}>
                             <motion.h1
                                 onClick={() => {

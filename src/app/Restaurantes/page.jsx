@@ -44,16 +44,9 @@ function RestaurantesPage() {
         setIsClient(true);
     }, []);
     return (
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden overflow-y-hidden">
             <div className="w-screen">{isClient && <EmblaCarouselFade slides={Restaurantes} options={{ align: "start", loop: true, draggable: false, dragFree: false }} />}</div>
-            <section className="mt-20 w-full flex flex-wrap ">
-                <select name="tipodecomida" id="tipodecomida" className="bg-amber-400">
-                    <option value="" className="bg-black">
-                        Tipo de Comida
-                    </option>
-                    {foodStyles}
-                </select>
-            </section>
+            <section className="mt-20 w-full flex flex-wrap "></section>
             <section className="flex flex-wrap w-90% mt-20 justify-center">{RestCard}</section>
         </main>
     );

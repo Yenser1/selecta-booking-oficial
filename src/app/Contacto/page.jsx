@@ -3,6 +3,16 @@
 import Image from "next/image";
 import ContactUsGrid from "../Components/ContactanosGrid";
 import { createClient } from "@supabase/supabase-js";
+import { Roboto_Mono } from "next/font/google";
+
+const roboto = Roboto_Mono({
+    subsets: ["latin"],
+    weight: "400",
+});
+const robotoBold = Roboto_Mono({
+    subsets: ["latin"],
+    weight: "700",
+});
 
 const supabaseUrl = "https://zejtimfkhwnardvbvoyq.supabase.co";
 const supabaseKey =
@@ -15,7 +25,7 @@ export default function Contacto() {
             <div className="relative">
                 <Image src={"/contactoImagen.webp"} width={1300} height={1000} alt="Imagen de Contacto" className="w-full object-cover h-96 opacity-60" />
                 <h1
-                    className="heading absolute top-1/2 -translate-y-1/2 w-full text-center"
+                    className={`${robotoBold.className} heading absolute top-1/2 -translate-y-1/2 w-full text-center h2`}
                     style={{
                         textShadow: "0 0 10px black",
                     }}
@@ -24,7 +34,6 @@ export default function Contacto() {
                 </h1>
             </div>
             <ContactUsGrid />
-            <div></div>
         </main>
     );
 }

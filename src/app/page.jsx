@@ -15,6 +15,7 @@ const robotoBold = Roboto_Mono({
     subsets: ["latin"],
     weight: "700",
 });
+
 const OPTIONS = { dragFree: true, loop: true };
 const SLIDES = [];
 for (let i = 1; i <= RESTAURANT.length; i++) {

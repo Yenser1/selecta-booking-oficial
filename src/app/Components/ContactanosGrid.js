@@ -1,11 +1,24 @@
 "use client";
 import Link from "next/link";
 import { Mail, Phone, LocationEdit, ClipboardCopy } from "lucide-react";
+import { motion } from "framer-motion";
+import { Roboto_Mono } from "next/font/google";
+
+const roboto = Roboto_Mono({
+    subsets: ["latin"],
+    weight: "400",
+});
+const robotoBold = Roboto_Mono({
+    subsets: ["latin"],
+    weight: "700",
+});
 
 function ContactUsGrid() {
+    let notif = [];
     return (
         <section id="contactgrid">
             <div className="flex">
+                {notif}
                 <div className="flex justify-center w-full mt-6">
                     <Link
                         href={"https://wa.link/3b0fmf"}
@@ -27,7 +40,13 @@ function ContactUsGrid() {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-wrap w-full justify-center mt-12 gap-12">
+            <motion.div
+                initial={{ y: 30 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true }}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.15 }}
+                className="flex flex-wrap w-full justify-center mt-12 gap-12"
+            >
                 <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-200 px-10 text-center">
                     <Mail className="w-12 h-12 " />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
@@ -38,8 +57,7 @@ function ContactUsGrid() {
                                 navigator.clipboard
                                     .writeText("contacto@selectabooking.com")
                                     .then(() => {
-                                        // Optional: Provide feedback to the user
-                                        alert("Copied the text");
+                                        notif.push(<p className="absolute text-9xl">Copiado</p>);
                                     })
                                     .catch((err) => {
                                         console.error("Failed to copy text: ", err);
@@ -48,10 +66,16 @@ function ContactUsGrid() {
                         />
                     </div>
                 </div>
-                <div className="contenedor hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                <motion.div
+                    initial={{ y: 30 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ ease: "easeInOut", duration: 0.5, delay: 0.25 }}
+                    className="contenedor hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center"
+                >
                     <LocationEdit className="w-12 h-12" />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
-                        <p className="body-lg">Calle 19, #89, Culo e` Maco, La Romana, Republica Dominicana</p>
+                        <p className="body-lg">C/19, #89, V. Paco, La Romana</p>
                         <ClipboardCopy
                             className="hover:scale-110 transition-all duration-300 cursor-pointer w-8 h-8"
                             onClick={() =>
@@ -64,8 +88,14 @@ function ContactUsGrid() {
                             }
                         />
                     </div>
-                </div>
-                <div className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center">
+                </motion.div>
+                <motion.div
+                    initial={{ y: 30 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ ease: "easeInOut", duration: 0.5, delay: 0.5 }}
+                    className="hover:text-amber-400 flex flex-col gap-2 justify-center items-center bg-[#333] min-w-96 w-[30vw] max-w-lg py-8 rounded-3xl hover:-translate-y-1 transition-all duration-150 px-10 text-center"
+                >
                     <Phone className="w-12 h-12" />
                     <div className="flex items-center gap-5 flex-wrap justify-center">
                         <p className="body-lg">(829) 646-0191</p>
@@ -84,8 +114,8 @@ function ContactUsGrid() {
                             }
                         />
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     );
 }

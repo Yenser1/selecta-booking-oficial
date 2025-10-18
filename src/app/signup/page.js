@@ -38,10 +38,10 @@ export default function SignUpPage() {
 
     if (success) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
+            <div className=" flex items-center justify-center">
                 <div className=" p-8 rounded-lg shadow-md w-full max-w-md">
-                    <h1 className="text-2xl font-bold mb-4 text-center text-green-600">¡Registro Exitoso!</h1>
-                    <p className="text-center text-gray-600">Revisa tu email para confirmar tu cuenta.</p>
+                    <h1 className="text-2xl font-bold mb-4 text-center text-amber-300">¡Registro Exitoso!</h1>
+                    <p className="text-center text-amber-300 underline">Revisa tu email para confirmar tu cuenta.</p>
                 </div>
             </div>
         );

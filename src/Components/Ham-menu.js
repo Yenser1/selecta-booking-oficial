@@ -1,5 +1,6 @@
 "use client";
 
+import { User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
@@ -112,6 +113,10 @@ const HamMenu = () => {
                             >
                                 Contacto
                             </motion.h1>
+                        </Link>
+
+                        <Link href={"/dashboard"}>
+                            <User className="w-full px-0 mx-0 mt-3.5 text-amber-300 scale-200 text-center hover:text-amber-500 transition-all duration-200" />
                         </Link>
                     </div>
                 </motion.section>

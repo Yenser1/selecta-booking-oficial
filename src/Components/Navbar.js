@@ -84,7 +84,7 @@ function Navbar() {
                 >
                     <span className="scale-50 text-center">{SVGs[4]}</span>Contacto
                 </motion.h1>
-                <Link href={"/login"}>
+                <Link href={"/dashboard"}>
                     <User className="absolute right-20 text-amber-300 scale-150 bottom-8 hover:text-amber-500 transition-all duration-200" />
                 </Link>
             </Link>

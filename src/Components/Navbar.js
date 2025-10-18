@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { Roboto_Mono } from "next/font/google";
 import { motion } from "framer-motion";
@@ -85,8 +84,8 @@ function Navbar() {
                 >
                     <span className="scale-50 text-center">{SVGs[4]}</span>Contacto
                 </motion.h1>
-                <Link href={"/"}>
-                    <User className="absolute right-20 text-amber-300 scale-150 bottom-8 hover:scale-200 underline transition-all duration-200 delay-75" />
+                <Link href={"/login"}>
+                    <User className="absolute right-20 text-amber-300 scale-150 bottom-8 hover:text-amber-500 transition-all duration-200" />
                 </Link>
             </Link>
         </nav>

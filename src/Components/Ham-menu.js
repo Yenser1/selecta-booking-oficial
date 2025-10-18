@@ -1,7 +1,7 @@
 "use client";
 
 import { User } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,93 +34,102 @@ const HamMenu = () => {
                     <path d="M3 6h18" />
                 </svg>
             </button>
-            {showMenu && (
-                <motion.section
-                    initial={{ x: "100%" }}
-                    whileInView={{ x: 0 }}
-                    transition={{ ease: "easeIn", duration: 0.6 }}
-                    className="flex flex-col absolute w-full items-center justify-center h-screen top-0 left-0 p-0 m-0 bg-black"
-                >
-                    <div className="flex w-full justify-end absolute top-0 items-center px-[10vw]  pb-3 m-0">
-                        <svg
-                            onClick={() => {
-                                setShowMenu(false);
-                            }}
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="64"
-                            height="64"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#ffdd00"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="lucide lucide-x-icon lucide-x"
-                        >
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
-                        </svg>
-                    </div>
-                    <div className="flex flex-col self-center text-center heading gap-[3vw]">
-                        <Link href={"/"}>
-                            <motion.h1
+            <AnimatePresence>
+                {showMenu && (
+                    <motion.section
+                        key="mobile-menu"
+                        initial={{ x: "100%", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: "100%", opacity: 0 }}
+                        transition={{ ease: "easeOut", duration: 0.45 }}
+                        className="flex flex-col fixed w-screen items-center justify-center h-screen top-0 left-0 p-0 m-0 bg-black"
+                    >
+                        <div className="flex w-full justify-end absolute top-0 items-center px-[10vw]  pb-3 m-0">
+                            <svg
                                 onClick={() => {
                                     setShowMenu(false);
                                 }}
-                                initial={{ y: 50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeInOut" }}
-                                className={pathname === "/" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="64"
+                                height="64"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#ffdd00"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-x-icon lucide-x"
                             >
-                                Inicio
-                            </motion.h1>
-                        </Link>
-                        <Link href={"/Restaurantes"}>
-                            <motion.h1
-                                onClick={() => {
-                                    setShowMenu(false);
-                                }}
-                                initial={{ y: 50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeInOut" }}
-                                className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
-                            >
-                                Restaurantes
-                            </motion.h1>
-                        </Link>
-                        <Link href={"/AcercaDeNosotros"}>
-                            <motion.h1
-                                onClick={() => {
-                                    setShowMenu(false);
-                                }}
-                                initial={{ y: 50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeInOut" }}
-                                className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
-                            >
-                                Acerca de Nosotros
-                            </motion.h1>
-                        </Link>
-                        <Link href={"/Contacto"}>
-                            <motion.h1
-                                onClick={() => {
-                                    setShowMenu(false);
-                                }}
-                                initial={{ y: -50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ ease: "easeInOut" }}
-                                className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
-                            >
-                                Contacto
-                            </motion.h1>
-                        </Link>
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </div>
+                        <div className="flex flex-col self-center text-center heading gap-[3vw]">
+                            <Link href={"/"}>
+                                <motion.h1
+                                    onClick={() => {
+                                        setShowMenu(false);
+                                    }}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ ease: "easeInOut" }}
+                                    className={pathname === "/" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                                >
+                                    Inicio
+                                </motion.h1>
+                            </Link>
+                            <Link href={"/Restaurantes"}>
+                                <motion.h1
+                                    onClick={() => {
+                                        setShowMenu(false);
+                                    }}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ ease: "easeInOut" }}
+                                    className={pathname === "/Restaurantes" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                                >
+                                    Restaurantes
+                                </motion.h1>
+                            </Link>
+                            <Link href={"/AcercaDeNosotros"}>
+                                <motion.h1
+                                    onClick={() => {
+                                        setShowMenu(false);
+                                    }}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ ease: "easeInOut" }}
+                                    className={pathname === "/AcercaDeNosotros" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                                >
+                                    Acerca de Nosotros
+                                </motion.h1>
+                            </Link>
+                            <Link href={"/Contacto"}>
+                                <motion.h1
+                                    onClick={() => {
+                                        setShowMenu(false);
+                                    }}
+                                    initial={{ y: -50, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ ease: "easeInOut" }}
+                                    className={pathname === "/Contacto" ? `text-amber-400 duration-300 border-b-1 ` : ` hover:text-amber-200 hover:scale-105 duration-300 `}
+                                >
+                                    Contacto
+                                </motion.h1>
+                            </Link>
 
-                        <Link href={"/dashboard"}>
-                            <User className="w-full px-0 mx-0 mt-3.5 text-amber-300 scale-200 text-center hover:text-amber-500 transition-all duration-200" />
-                        </Link>
-                    </div>
-                </motion.section>
-            )}
+                            <Link
+                                href={"/dashboard"}
+                                onClick={() => {
+                                    setShowMenu(false);
+                                }}
+                            >
+                                <User className="w-full px-0 mx-0 mt-3.5 text-amber-300 scale-200 text-center hover:text-amber-500 transition-all duration-200" />
+                            </Link>
+                        </div>
+                    </motion.section>
+                )}
+            </AnimatePresence>
         </div>
     );
 };

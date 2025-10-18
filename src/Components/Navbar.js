@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Roboto_Mono } from "next/font/google";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import SVGs from "../CONST/svgs";
+import SVGs from "../consts/svgs";
+import { User } from "lucide-react";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -84,6 +85,9 @@ function Navbar() {
                 >
                     <span className="scale-50 text-center">{SVGs[4]}</span>Contacto
                 </motion.h1>
+                <Link href={"/"}>
+                    <User className="absolute right-20 text-amber-300 scale-150 bottom-8 hover:scale-200 underline transition-all duration-200 delay-75" />
+                </Link>
             </Link>
         </nav>
     );

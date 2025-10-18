@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tangerine } from "next/font/google";
 import Link from "next/link";
-import ESTILOS from "../CONST/estilos";
+import ESTILOS from "../consts/estilos";
 
 const tangerine = Tangerine({
     subsets: ["latin"],

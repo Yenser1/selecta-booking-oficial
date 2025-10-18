@@ -1,10 +1,10 @@
 import { Roboto_Mono } from "next/font/google";
-import EmblaCarousel from "./Components/EmblaCarousel";
-import Restaurante from "./Components/LandingSlides";
-import Box from "./Components/ResBox";
+import EmblaCarousel from "../Components/EmblaCarousel";
+import Restaurante from "../Components/LandingSlides";
+import Box from "../Components/ResBox";
 import Link from "next/link";
-import RESTAURANT from "./CONST/restuarants";
-import ContactUsGrid from "./Components/ContactanosGrid";
+import RESTAURANT from "../consts/restuarants";
+import ContactUsGrid from "../Components/ContactanosGrid";
 import "./styles/embla.css";
 
 const roboto = Roboto_Mono({

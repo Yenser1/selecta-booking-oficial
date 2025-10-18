@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import EmblaCarouselFade from "../Components/EmblaFadeCarousel";
-import RESTAURANT from "../CONST/restuarants";
-import Box from "../Components/ResBox";
-import ESTILOS from "../CONST/estilos";
-import ESTILOSinfo from "../CONST/estilosinfo";
+import EmblaCarouselFade from "../../Components/EmblaFadeCarousel";
+import RESTAURANT from "../../consts/restuarants";
+import Box from "../../Components/ResBox";
+import ESTILOS from "../../consts/estilos";
+import ESTILOSinfo from "../../consts/estilosinfo";
 import { useEffect, useState } from "react";
 
 const Restaurantes = [];

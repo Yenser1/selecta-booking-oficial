@@ -1,6 +1,6 @@
-import RESTAURANT from "@/app/CONST/restuarants";
+import RESTAURANT from "@/consts/restuarants";
 import Image from "next/image";
-import ESTILOS from "@/app/CONST/estilos";
+import ESTILOS from "@/consts/estilos";
 import Link from "next/link";
 import { Tangerine } from "next/font/google";
 

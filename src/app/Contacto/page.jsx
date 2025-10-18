@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import ContactUsGrid from "../Components/ContactanosGrid";
+import ContactUsGrid from "../../Components/ContactanosGrid";
 import { createClient } from "@supabase/supabase-js";
 import { Roboto_Mono } from "next/font/google";
+import { motion } from "framer-motion";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -22,7 +23,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export default function Contacto() {
     return (
         <main>
-            <div className="relative">
+            <motion.div className="relative">
                 <Image src={"/contactoImagen.webp"} width={1300} height={1000} alt="Imagen de Contacto" className="w-full object-cover h-96 opacity-60" />
                 <h1
                     className={`${robotoBold.className} heading absolute top-1/2 -translate-y-1/2 w-full text-center h2`}
@@ -32,7 +33,7 @@ export default function Contacto() {
                 >
                     Contactanos!
                 </h1>
-            </div>
+            </motion.div>
             <ContactUsGrid />
         </main>
     );

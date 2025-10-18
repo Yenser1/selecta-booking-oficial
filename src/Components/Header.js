@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import HameMenu from "./Ham-menu";
+import { User } from "lucide-react";
 
 const BREAKPOINT = 1200;
 

@@ -67,7 +67,7 @@ function Footer() {
                 </div>
             </section>
             <section className="flex w-full justify-center gap-5 items-center">
-                <Link href={"https://www.facebook.com/"} target="blank" className="hover:scale-110 hover:rotate-5 transition-transform duration-250">
+                <Link href={"https://www.facebook.com/"} target="blank" className="hover:scale-110 hover:rotate-5 hover:-translate-y-2 transition-transform duration-250">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="36"
@@ -83,7 +83,7 @@ function Footer() {
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                     </svg>
                 </Link>
-                <Link href={"https://www.instagram.com/"} target="blank" className="hover:scale-110 hover:rotate-5 transition-transform duration-250">
+                <Link href={"https://www.instagram.com/"} target="blank" className="hover:scale-110 hover:rotate-5 hover:-translate-y-2 transition-transform duration-250">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="36"
@@ -101,7 +101,7 @@ function Footer() {
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                     </svg>
                 </Link>
-                <Link href={"https://www.youtube.com/"} target="blank" className="hover:scale-110 hover:rotate-5 transition-transform duration-250">
+                <Link href={"https://www.youtube.com/"} target="blank" className="hover:scale-110 hover:rotate-5 hover:-translate-y-2 transition-transform duration-250">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="44"
@@ -119,7 +119,14 @@ function Footer() {
                     </svg>
                 </Link>
                 <Link href={"https://www.tiktok.com/"} target="blank">
-                    <svg className="hover:scale-110 hover:rotate-5 transition-transform duration-250" width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        className="hover:scale-110 hover:rotate-5 hover:-translate-y-2 transition-transform duration-250"
+                        width="36px"
+                        height="36px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -133,7 +140,14 @@ function Footer() {
                     </svg>
                 </Link>
                 <Link href={"https://wa.link/3b0fmf"} target="blank">
-                    <svg className="hover:scale-110 hover:rotate-5 transition-transform duration-250" fill="#fcbb00" width="36px" height="36px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        className="hover:scale-110 hover:rotate-5 hover:-translate-y-2 transition-transform duration-250"
+                        fill="#fcbb00"
+                        width="36px"
+                        height="36px"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">

@@ -6,7 +6,7 @@ import Fade from "embla-carousel-fade";
 import Autoplay from "embla-carousel-autoplay";
 import { useAutoplay } from "./EmblaCarouselAutoplay";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
-import "../styles/embla-for-fade.css";
+import "../app/styles/embla-for-fade.css";
 
 const EmblaCarouselFade = (props) => {
     const { slides, options } = props;

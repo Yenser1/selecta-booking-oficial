@@ -3,21 +3,11 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import HameMenu from "./Ham-menu";
-import { User } from "lucide-react";
-
-const BREAKPOINT = 1200;
+import { useDevice } from "@/hooks/use-device";
 
 function Header() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const checksize = () => setIsMobile(window.innerWidth < BREAKPOINT);
-        checksize();
-        window.addEventListener("resize", checksize);
-        return () => window.removeEventListener("resize", checksize);
-    }, []);
+    const { device, isDesktop, isMobile, isTablet } = useDevice();
     const HEADERHAM = (
         <header className="header w-full sticky inset-0 z-30 flex justify-between pb-1 px-[10vw] items-center backdrop-blur-md">
             <Link href={"/"} className="Imagen">
@@ -38,6 +28,13 @@ function Header() {
             <Navbar />
         </header>
     );
-    return isMobile ? HEADERHAM : HEADERNAV;
+
+    return (
+        <div>
+            {isDesktop && HEADERNAV}
+            {isTablet && HEADERHAM}
+            {isMobile && HEADERHAM}
+        </div>
+    );
 }
 export default Header;

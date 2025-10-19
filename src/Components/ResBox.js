@@ -36,7 +36,7 @@ function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", d
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ ease: "linear", duration: 0.1 }}
-                                className="p-1 px-1.5 bg-amber-400 text-center border-2 rounded-sm border-none cursor-pointer"
+                                className="p-1 px-1.5 bg-amber-400 text-gray-800 text-center border-2  rounded-sm border-none cursor-pointer"
                             >
                                 Leer mas
                             </motion.button>
@@ -45,7 +45,7 @@ function Box({ nombre = "Nombre Generico", estilo, imgURL = "/ImagenGenerica", d
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ ease: "linear", duration: 0.1 }}
-                                className="p-1 px-1.5 bg-amber-400 text-center border-2 rounded-sm border-none cursor-pointer"
+                                className="p-1 px-1.5 bg-amber-400 text-gray-800 text-center border-2 rounded-sm border-none cursor-pointer"
                             >
                                 Reservar Ahora
                             </motion.button>

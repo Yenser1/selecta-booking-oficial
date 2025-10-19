@@ -17,7 +17,7 @@ const ESTILOS = [
     <div key={0} className="bg-cyan-600 w-max p-1 px-1.5 rounded-md font-bold">
         <p>China</p>
     </div>,
-    <div key={1} className="bg-amber-400 w-max p-1 px-1.5 rounded-md font-bold">
+    <div key={1} className="bg-amber-400 w-max p-1 px-1.5 rounded-md font-bold text-shadow-black">
         <p>Mexicana</p>
     </div>,
     <div key={2} className="bg-amber-600 w-max p-1 px-1.5 rounded-md font-bold">

@@ -1,8 +1,10 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import { Mail, Phone, LocationEdit, ClipboardCopy } from "lucide-react";
 import { motion } from "framer-motion";
 import { Roboto_Mono } from "next/font/google";
+import { useDevice } from "@/hooks/use-device";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -14,16 +16,22 @@ const robotoBold = Roboto_Mono({
 });
 
 function ContactUsGrid() {
-    let notif = [];
+    const { device, isDesktop, isMobile, isTablet } = useDevice();
+    const [showNotif, setShowNotif] = useState(false);
+
+    const confirmationNotif = (
+        <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeIn", duration: 0.5 }} className="bg-green-500 py-2 px-5 rounded-xl">
+            <p className="">Copiado con Éxito!!</p>
+        </motion.div>
+    );
     return (
         <section id="contactgrid">
             <div className="flex">
-                {notif}
                 <div className="flex justify-center w-full mt-6">
                     <Link
                         href={"https://wa.link/3b0fmf"}
                         target="blank"
-                        className="bg-green-500 py-3 px-12 rounded-4xl flex justify-center items-center gap-6 text-xl hover:scale-105 duration-200 delay-75"
+                        className={`bg-green-500 py-3 px-12 rounded-4xl flex justify-center items-center gap-6 ${isMobile ? `text-lg` : `text-xl`} hover:scale-105 duration-200 delay-75`}
                         style={{
                             textShadow: "0 0 10px black",
                         }}
@@ -57,7 +65,8 @@ function ContactUsGrid() {
                                 navigator.clipboard
                                     .writeText("contacto@selectabooking.com")
                                     .then(() => {
-                                        notif.push(<p className="absolute text-9xl">Copiado</p>);
+                                        setShowNotif(true);
+                                        setTimeout(() => setShowNotif(false), 2500);
                                     })
                                     .catch((err) => {
                                         console.error("Failed to copy text: ", err);
@@ -80,8 +89,11 @@ function ContactUsGrid() {
                             className="hover:scale-110 transition-all duration-300 cursor-pointer w-8 h-8"
                             onClick={() =>
                                 navigator.clipboard
-                                    .writeText("Calle 19, #89, Culo e` Maco, La Romana, Republica Dominicana")
-                                    .then(() => {})
+                                    .writeText("Calle 19, #89, Villa Paco, La Romana, Republica Dominicana")
+                                    .then(() => {
+                                        setShowNotif(true);
+                                        setTimeout(() => setShowNotif(false), 2500);
+                                    })
                                     .catch((err) => {
                                         console.error("Failed to copy text: ", err);
                                     })
@@ -105,8 +117,8 @@ function ContactUsGrid() {
                                 navigator.clipboard
                                     .writeText("8296460191")
                                     .then(() => {
-                                        // Optional: Provide feedback to the user
-                                        alert("Copied the text");
+                                        setShowNotif(true);
+                                        setTimeout(() => setShowNotif(false), 2500);
                                     })
                                     .catch((err) => {
                                         console.error("Failed to copy text: ", err);
@@ -116,6 +128,9 @@ function ContactUsGrid() {
                     </div>
                 </motion.div>
             </motion.div>
+            <div id="notification" className="absolute bottom-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                {showNotif && confirmationNotif}
+            </div>
         </section>
     );
 }

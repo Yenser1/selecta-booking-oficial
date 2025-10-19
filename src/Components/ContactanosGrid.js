@@ -128,7 +128,7 @@ function ContactUsGrid() {
                     </div>
                 </motion.div>
             </motion.div>
-            <div id="notification" className="absolute bottom-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div id="notification" className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
                 {showNotif && confirmationNotif}
             </div>
         </section>

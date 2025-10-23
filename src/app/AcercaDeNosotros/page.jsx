@@ -1,5 +1,6 @@
 import { Roboto_Mono } from "next/font/google";
 import Image from "next/image";
+import { useState } from "react";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -24,7 +25,7 @@ function AcercaDeNosotros() {
                     <Image src={"/Empleados/grupalSinProfe.jpg"} alt="Imagen" fill className="object-cover rounded-2xl" />
                 </div>
                 <div className="w-96 h-96 flex justify-center items-center">
-                    <p className={`${roboto.className} text-justify body-base`}>
+                    <p className={`${roboto.className} text-justify body-base px-4`}>
                         Nosotros somos <span className="text-amber-400 font-bold">Selecta Booking</span>, un grupo de jovenes emprendedores con vision a futuro que pensaron en crear una pagina
                         central, en donde la facilidad al elegir que comer hace que sea casi magico el estar con la familia.
                     </p>
@@ -37,7 +38,7 @@ function AcercaDeNosotros() {
                 }}
             >
                 <div className="w-96 h-96 flex justify-center items-center">
-                    <p className={`${roboto.className} text-justify body-base`}>
+                    <p className={`${roboto.className} text-justify body-base px-4`}>
                         Con el impulso de los facilitadores de <span className="text-blue-600 font-bold">INFOTEP</span> a sido realmente facil y llevadero el crear a{" "}
                         <span className="text-amber-400 font-bold">Selecta Booking</span> donde se siente el fervor de los maestros y la dedicacion de los estudiantes al hacer las labores.
                     </p>

@@ -169,3 +169,11 @@ body {
     font-size: var(--text-sm);
     line-height: 1.5;
 }
+.foodStyle{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    padding: 0.25rem;
+    
+}

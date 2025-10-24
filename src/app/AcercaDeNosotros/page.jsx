@@ -1,6 +1,5 @@
 import { Roboto_Mono } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],

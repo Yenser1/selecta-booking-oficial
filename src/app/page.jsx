@@ -104,7 +104,6 @@ function LandingPage() {
                 </Link>
             </section>
             <ContactUsGrid />
-            <Link href={"/tryingCRUD"}>palcru</Link>
         </main>
     );
 }

@@ -113,9 +113,9 @@ export default async function DashboardPage() {
             {/* Quick Actions */}
             <section className="w-full max-w-6xl px-4 mb-10">
                 <h2 className={`${robotoBold.className} text-2xl text-amber-300 mb-6 text-center`}>Acciones Rápidas</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <Link href={"/"} className="bg-amber-500 text-black p-6 rounded-lg text-center font-bold text-lg hover:scale-105 hover:-skew-x-2 transition-all duration-150">
-                        🏠 Ir al Inicio
+                        Ir al Inicio
                     </Link>
 
                     <Link
@@ -124,7 +124,11 @@ export default async function DashboardPage() {
                         rel="noreferrer"
                         className="bg-amber-500 text-black p-6 rounded-lg text-center font-bold text-lg hover:scale-105 hover:skew-x-2 transition-all duration-150"
                     >
-                        📞 Hacer una Reserva
+                        Hacer una Reserva
+                    </Link>
+
+                    <Link href="/tryingCRUD" className="bg-amber-500 text-black p-6 rounded-lg text-center font-bold text-lg  hover:scale-105 hover:skew-x-2 transition-all duration-150">
+                        Manage Restaurants
                     </Link>
                 </div>
             </section>

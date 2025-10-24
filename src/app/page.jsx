@@ -1,6 +1,5 @@
 "use client";
 
-import { Roboto_Mono } from "next/font/google";
 import EmblaCarousel from "../Components/EmblaCarousel";
 import Restaurante from "../Components/LandingSlides";
 import Box from "../Components/ResBox";
@@ -9,6 +8,7 @@ import RESTAURANT from "../consts/restuarants";
 import ContactUsGrid from "../Components/ContactanosGrid";
 import { useDevice } from "@/hooks/use-device";
 import "./styles/embla.css";
+import { Roboto_Mono } from "next/font/google";
 
 const roboto = Roboto_Mono({
     subsets: ["latin"],
@@ -104,6 +104,7 @@ function LandingPage() {
                 </Link>
             </section>
             <ContactUsGrid />
+            <Link href={"/tryingCRUD"}>palcru</Link>
         </main>
     );
 }

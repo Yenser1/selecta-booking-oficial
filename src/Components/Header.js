@@ -10,7 +10,7 @@ function Header() {
     const { device, isDesktop, isMobile, isTablet } = useDevice();
     const HEADERHAM = (
         <header className="header w-full sticky inset-0 z-30 flex justify-between pb-1 px-[10vw] items-center backdrop-blur-md">
-            <Link href={"/"} className="Imagen">
+            <Link href={"/Charts"} className="Imagen">
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "linear", duration: "1" }}>
                     <Image src={"/Selecta.webp"} width={200} height={200} alt="Selecta Booking Logo" className="Imagen hover:scale-110 hover:rotate-2 transition-all duration-300" />
                 </motion.div>

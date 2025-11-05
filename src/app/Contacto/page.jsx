@@ -35,6 +35,7 @@ export default function Contacto() {
                 </h1>
             </motion.div>
             <ContactUsGrid />
+            
         </main>
     );
 }

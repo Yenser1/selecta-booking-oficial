@@ -2,13 +2,23 @@
 
 import { User } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const HamMenu = () => {
     const pathname = usePathname();
     const [showMenu, setShowMenu] = useState(false);
+    useEffect(() => {
+        if (!showMenu) return;
+        // When menu opens, prevent background scrolling
+        const previous = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+        return () => {
+            // restore previous overflow when menu closes
+            document.body.style.overflow = previous || "";
+        };
+    }, [showMenu]);
     return (
         <div>
             <button

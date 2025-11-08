@@ -127,8 +127,8 @@ export default async function DashboardPage() {
                         Hacer una Reserva
                     </Link>
 
-                    <Link href="/tryingCRUD" className="bg-amber-500 text-black p-6 rounded-lg text-center font-bold text-lg  hover:scale-105 hover:skew-x-2 transition-all duration-150">
-                        Manage Restaurants
+                    <Link href="/Metrics" className="bg-amber-500 text-black p-6 rounded-lg text-center font-bold text-lg  hover:scale-105 hover:skew-x-2 transition-all duration-150">
+                        Metricas
                     </Link>
                 </div>
             </section>
